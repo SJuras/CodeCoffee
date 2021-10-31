@@ -1,4 +1,4 @@
-/* 58 minuta */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,21 +13,14 @@ body {
 
 ul {
   list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
 }
 
 ul li {
-  text-transform: uppercase;
-  padding-left: 24px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
-  color: rgba(0,0,0,.87);
 }
 
 header {
@@ -58,5 +51,24 @@ header {
 }
 
 .left-nav nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
+.left-nav nav ul li {
+  text-transform: uppercase;
+  padding-left: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.left-nav nav ul li a {
+  color: rgba(0,0,0,.87);
+  transition: 0.5s;
+}
+
+.left-nav nav ul li:hover a {
+  color: #008248;
 }
