@@ -182,3 +182,56 @@ header {
   bottom: 10%;
 }
 /* hero section END */
+
+/* sections */
+section {
+
+}
+
+.section-canvas {
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  height: 100vh;
+}
+
+.section-title {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 900;
+  text-align: center;
+  color: #f5e8d7;
+}
+
+.section-title h2 {
+  font-size: 3em;
+  margin-bottom: 12px;
+}
+
+.section-title h4 {
+  font-size: 1.5em;
+}
+
+.section-canvas-left {
+  width: 50%;
+  height: 100%;
+  background-color: #20232a;
+}
+
+.section-canvas-right {
+  width: 50%;
+  height: 100%;
+  background-color: #2b2f38;
+}
+/* sections END */
+
+/* footer */
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #282c35;
+  border-top: 1px solid #f5e8d7;
+}
+/* footer END */
