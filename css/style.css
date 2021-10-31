@@ -1,0 +1,62 @@
+/* 58 minuta */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  color: rgba(0,0,0,.87);
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+ul li {
+  text-transform: uppercase;
+  padding-left: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(0,0,0,.87);
+}
+
+header {
+  height: 101px;
+  box-shadow: 0 1px 3px rgba(0 0 0 / 10%);
+}
+
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.logo {
+  height: 51px;
+  width: 51px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-nav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.left-nav nav ul {
+
+}
