@@ -1,3 +1,17 @@
+/*
+colors:
+
+green: #008248;
+
+white: #f5e8d7;
+
+orange: #f3693a;
+
+mid-black-letters: #282c35;
+mid-black: #2b2f38;
+black: #20232a;
+*/
+
 
 * {
   margin: 0;
@@ -23,15 +37,49 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  padding: 10px 20px;
+  border: 1px solid rgba(0,0,0,.87);
+  border-radius: 20px;
+  color: rgba(0,0,0,.87);
+  margin-left: 18px;
+  transition: 0.5s;
+}
+
+.btn-black {
+  padding: 10px 20px;
+  border: 1px solid rgba(0,0,0,.87);
+  border-radius: 20px;
+  background-color: rgba(0,0,0,.87);
+  color: #fff;
+  margin-left: 18px;
+  transition: 0.5s;
+}
+
+.btn:hover,
+.btn-black:hover {
+  background-color: #008248;
+  border: 1px solid #008248;
+  color: #fff;
+}
+
+/* header */
 header {
-  height: 101px;
-  box-shadow: 0 1px 3px rgba(0 0 0 / 10%);
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .header-container {
-  max-width: 1440px;
+  max-width: 90%;
   margin: 0 auto;
   height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -65,10 +113,72 @@ header {
 }
 
 .left-nav nav ul li a {
-  color: rgba(0,0,0,.87);
+  color: #f5e8d7;
   transition: 0.5s;
 }
 
 .left-nav nav ul li:hover a {
-  color: #008248;
+  color: #f3693a;
 }
+
+.left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-nav {
+  display: flex;
+}
+/* header END */
+
+/* heros section */
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-left {
+  width: 50%;
+  height: 100%;
+  background-color: #20232a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.main-title h1,
+.main-title h2 {
+  color: #f5e8d7;
+}
+
+.sub-title-box-left {
+  width: 30%;
+  height: 200px;
+  background-color: #2b2f38;
+  position: absolute;
+  left: 0px;
+  bottom: 10%;
+}
+
+.hero-right {
+  width: 50%;
+  height: 100%;
+  background-color: #2b2f38;
+  position: relative;
+}
+
+.sub-title-box-right {
+  width: 30%;
+  height: 200px;
+  background-color: #20232a;
+  position: absolute;
+  right: 0px;
+  bottom: 10%;
+}
+/* hero section END */
